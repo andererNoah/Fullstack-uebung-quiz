@@ -1,5 +1,8 @@
-.header {
+.body   {
     background-color: #080808;
+}
+.header {
+    background-color: #030303;
     color: white;
     padding: 10px;
     text-align: center;
@@ -8,6 +11,7 @@
     margin: 3px;
     font-size: 24px;
 }
+
 
 
 .quiz-container-1 {
@@ -38,7 +42,7 @@
   width: 100px;
   height: 100px;
   text-align: center;
-  transition: transform 0.8s;
+  transition: transform 0.8s ease;
   transform-style: preserve-3d;
 }
 .flip-card:hover .flip-card-inner {
@@ -61,6 +65,7 @@
 /* Style the back side */
 .flip-card-back {
   background-color: rgb(255, 255, 255);
-  color: white;
+  color: rgb(13, 13, 13);
   transform: rotateY(180deg);
 }
+
