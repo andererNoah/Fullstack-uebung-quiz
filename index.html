@@ -1,239 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body id="body">
+
+    <div class="main-container">
+        <div class="left-container">
+
     <div class="header">
-        <h1>Bundesländer Flags Quiz</h1>
+        <h1>Bundesländer Quiz</h1>
     </div>
+
+    <div class="scoreboard" style="display: flex; justify-content: center; gap: 20px; margin: 15px 0; font-weight: bold;">
+        <div>Richtig: <span id="richtigCount">0</span></div>
+        <div>Falsch: <span id="falschCount">0</span></div>
+    </div>
+
     <div class="quiz-container-main">
         <div class="quiz-container-1">
-        <div class="button-img-Brandenburg">
-            <button>   
-                
-            <div class="flip-card">
-                    <div class="flip-card-inner">
-                         <div class="flip-card-front">
+            <div class="button-img-Berlin">
+                <button id="Picture1">
 
-        
-        <div class="Button-Berlin">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
 
 
-      <img src="pictures/DEU_Berlin_COA.svg" alt="Avatar" >
-      </div>
-    </div>
-    <div class="flip-card-back">
-        <p>Berlin</p>
-    </div>
-  </div>
-</div>
-</button>
-        </div> 
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-
-      <img src="pictures/DEU_Brandenburg_COA.svg" alt="Wappen von Brandenburg" >
-    </div>
-    <div class="flip-card-back">
-        <p>Brandenburg</p>
-    </div>
-  </div>
-</div>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-        <img src="pictures/DEU_Hamburg_COA.svg" alt="Wappen von Hamburg" >
-    </div>
-    <div class="flip-card-back">
-        <p>Hamburg</p>
-    </div>
-  </div>
-</div>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-        <img src="pictures/Wappen_von_Niedersachsen.svg" alt="Wappen von Niedersachsen" >
-    </div>
-    <div class="flip-card-back">
-        <p>Niedersachsen</p>
-    </div>
-  </div>
-</div>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-        <img src="pictures/Coat_of_arms_of_Hesse.svg" alt="Wappen von Hessen" >
-    </div>
-    <div class="flip-card-back">
-        <p>Hessen</p>   
-    </div>
-  </div>
-</div>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-        <img src="pictures/Coat_of_arms_of_Mecklenburg-Western_Pomerania_(great).svg" alt="Wappen von Mecklenburg-Vorpommern" >
-    </div>
-    <div class="flip-card-back">
-        <p>Mecklenburg-Vorpommern</p>
-    </div>
-  </div>
-</div>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-        <img src="pictures/deu_schleswig-holstein_coa.svg" alt="Wappen von Schleswig-Holstein" >
-    </div>
-    <div class="flip-card-back">
-        <p>Schleswig-Holstein</p>
-    </div>
-  </div>
-</div>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-        <img src="pictures/Coat_of_arms_of_Rhineland-Palatinate.svg" alt="Wappen von Rheinland-Pfalz" >
-    </div>
-    <div class="flip-card-back">
-        <p>Rheinland-Pfalz</p>
-    </div>
-  </div>
-</div>
-</div> 
-<div class="quiz-container-2"> 
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-        <img src="pictures/lesser_coat_of_arms_of_Baden-Württemberg.svg" alt="Wappen von Baden-Württemberg" >
-    </div>
-    <div class="flip-card-back">
-        <p>Baden-Württemberg</p>
-    </div>
-  </div>
-</div>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-        <img src="pictures/wappen_des_Saarlands.svg" alt="Wappen von Saarland"  >
-    </div>
-    <div class="flip-card-back">
-        <p>Saarland</p>
-    </div>
-  </div>
-</div>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-        <img src="pictures/coat_of_arms_of_Bavaria.svg" alt="Wappen von Bayern" >
-    </div>
-    <div class="flip-card-back">
-        <p>Bayern</p>
-    </div>
-  </div>
-</div>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-        <img src="pictures/coat_of_arms_of_Thuringia.svg" alt="Wappen von Thüringen"    >
-    </div>
-    <div class="flip-card-back">
-        <p>Thüringen</p>
-    </div>
-  </div>
-</div>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-        <img src="pictures/coat_of_arms_of_North_Rhine-Westphalia.svg" alt="Wappen von Nordrhein-Westfalen" >
-    </div>
-    <div class="flip-card-back">
-        <p>Nordrhein-Westfalen</p>
-    </div>
-  </div>
-</div>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-        <img src="pictures/coat_of_arms_of_Saxony.svg" alt="Wappen von Sachsen"     >
-    </div>
-    <div class="flip-card-back">
-        <p>Sachsen</p>
-    </div>
-  </div>
-</div>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-        <img src="pictures/wappen_sachsen-anhalt.svg" alt="Wappen von Sachsen-Anhalt"   >
-    </div>
-    <div class="flip-card-back">
-        <p>Sachsen-Anhalt</p>
-    </div>
-  </div>
-</div>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-        <img src="pictures/DEU_Schleswig-Holstein_COA.svg" alt="Wappen von Schleswig-Holstein" >
-    </div>
-    <div class="flip-card-back">
-        <p>Schleswig-Holstein</p>
-        
-        
-    </div>
-  </div>
-</div>
-</div>
-   
+                                <div class="Button-Berlin">
 
 
+                                    <img src="pictures/DEU_Berlin_COA.svg" alt="Avatar">
+
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Berlin</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="button-img-Brandenburg">
+                <button id="Picture2">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pictures/DEU_Brandenburg_COA.svg" alt="Wappen von Brandenburg">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Brandenburg</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="button-img-Hamburg">
+                <button id="Picture3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pictures/DEU_Hamburg_COA.svg" alt="Wappen von Hamburg">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Hamburg</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="button-img-Niedersachsen">
+                <button id="Picture4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pictures/Wappen_von_Niedersachsen.svg" alt="Wappen von Niedersachsen">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Niedersachsen</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="button-img-Hessen">
+                <button id="Picture5">
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pictures/Coat_of_arms_of_Hesse.svg" alt="Wappen von Hessen">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Hessen</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="button-img-Mecklenburg-Vorpommern">
+                <button id="Picture6">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pictures/Coat_of_arms_of_Mecklenburg-Western_Pomerania_(great).svg"
+                                    alt="Wappen von Mecklenburg-Vorpommern">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Mecklenburg-Vorpommern</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="button-img-Schleswig-Holstein">
+                <button id="Picture7">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pictures/deu_schleswig-holstein_coa.svg" alt="Wappen von Schleswig-Holstein">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Schleswig-Holstein</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="button-img-Rheinland-Pfalz">
+                <button id="Picture8">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pictures/Coat_of_arms_of_Rhineland-Palatinate.svg"
+                                    alt="Wappen von Rheinland-Pfalz">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Rheinland-Pfalz</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="button-img-Baden-Württemberg">
+                <button id="Picture9">
+                    <div class="quiz-container-2">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="pictures/lesser_coat_of_arms_of_Baden-Württemberg.svg"
+                                        alt="Wappen von Baden-Württemberg">
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>Baden-Württemberg</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="button-img-Saarland">
+                <button id="Picture10">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pictures/wappen_des_Saarlands.svg" alt="Wappen von Saarland">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Saarland</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="button-img-Bayern">
+                <button id="Picture11">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pictures/coat_of_arms_of_Bavaria.svg" alt="Wappen von Bayern">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Bayern</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="button-img-Thüringen">
+                <button id="Picture12">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pictures/coat_of_arms_of_Thuringia.svg" alt="Wappen von Thüringen">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Thüringen</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="button-img-Nordrhein-Westfalen">
+                <button id="Picture13">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pictures/coat_of_arms_of_North_Rhine-Westphalia.svg"
+                                    alt="Wappen von Nordrhein-Westfalen">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Nordrhein-Westfalen</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="button-img-Sachsen">
+                <button id="Picture14">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pictures/coat_of_arms_of_Saxony.svg" alt="Wappen von Sachsen">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Sachsen</p>
+                            </div>
+                        </div>
+                    </div>
+                    </button>
+            </div>
+            <div class="button-img-Sachsen-Anhalt">
+                <button id="Picture15">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pictures/wappen_sachsen-anhalt.svg" alt="Wappen von Sachsen-Anhalt">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Sachsen-Anhalt</p>
+                            </div>
+                        </div>
+                    </div>
+                    </button>
+            </div>
+            <div class="button-img-Bremen">
+                <button id="Picture16">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="pictures/Bremen_Wappen(Mittel).svg" alt="Wappen von Bremen">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Bremen</p>
 
 
-    </div>
+                            </div>
+                        </div>
+                    </div>
+                    </button>
+            </div>
 
-    <div class="locations-main">    
-        <img src="location/Deutschland_Lage_Berlins.svg" alt="Berlin">
-        <img src="location/Deutschland_Lage_von_Brandenburg.svg" alt="Brandenburg">
-        <img src="location/Deutschland_Lage_von_Hamburg.svg" alt="Hamburg">
-        <img src="location/Deutschland_Lage_von_Niedersachsen.svg" alt="Niedersachsen">
-        <img src="location/Deutschland_Lage_von_Hessen.svg" alt="Hessen">
-        <img src="location/Deutschland_Lage_von_Mecklenburg-Vorpommern.svg" alt="Mecklenburg-Vorpommern">
-        <img src="location/Deutschland_Lage_von_Schleswig-Holstein.svg" alt="Schleswig-Holstein">
-        <img src="location/Deutschland_Lage_von_Rheinland-Pfalz.svg" alt="Rheinland-Pfalz">
-        <img src="location/Deutschland_Lage_von_Baden-Württemberg.svg" alt="Baden-Württemberg">
-        <img src="location/Deutschland_Lage_des_Saarlandes.svg" alt="Saarland">
-        <img src="location/Deutschland_Lage_von_Bayern.svg" alt="Bayern">
-        <img src="location/Deutschland_Lage_von_Thüringen.svg" alt="Thüringen">
-        <img src="location/Deutschland_Lage_von_Nordrhein-Westfalen.svg" alt="Nordrhein-Westfalen">
-        <img src="location/Deutschland_Lage_von_Sachsen.svg" alt="Sachsen">
-        <img src="location/Deutschland_Lage_von_Sachsen-Anhalt.svg" alt="Sachsen-Anhalt">
-        <img src="location/Deutschland_Lage_von_Schleswig-Holstein.svg" alt="Schleswig-Holstein">
-
-
-       
-
-    </div>
-
-<button>JJJJJ</button>
+        </div>
+        </div>
 
 
 
+        <div class="right-container">
+       <div class="locations-main" >
+
+            <div class="Question">
+                <img id="Question" src="location/Deutschland_Lage_Berlins.svg" alt="Berlin" height="320px" width="320px">
+            </div>
+            <div style="display: none;">
+                <div class="Question">
+                <img id="Question2" src="location/Deutschland_Lage_von_Brandenburg.svg" alt="Brandenburg">
+            </div>
+            <img id="Question3" src="location/Deutschland_Lage_von_Hamburg.svg" alt="Hamburg">
+            <img id="Question4" src="location/Deutschland_Lage_von_Niedersachsen.svg" alt="Niedersachsen">
+            <img src="location/Deutschland_Lage_von_Hessen.svg" alt="Hessen">
+            <img src="location/Deutschland_Lage_von_Mecklenburg-Vorpommern.svg" alt="Mecklenburg-Vorpommern">
+            <img src="location/Deutschland_Lage_von_Schleswig-Holstein.svg" alt="Schleswig-Holstein">
+            <img src="location/Deutschland_Lage_von_Rheinland-Pfalz.svg" alt="Rheinland-Pfalz">
+            <img src="location/Deutschland_Lage_von_Baden-Württemberg.svg" alt="Baden-Württemberg">
+            <img src="location/Deutschland_Lage_des_Saarlandes.svg" alt="Saarland">
+            <img src="location/Deutschland_Lage_von_Bayern.svg" alt="Bayern">
+            <img src="location/Deutschland_Lage_von_Thüringen.svg" alt="Thüringen">
+            <img src="location/Deutschland_Lage_von_Nordrhein-Westfalen.svg" alt="Nordrhein-Westfalen">
+            <img src="location/Deutschland_Lage_von_Sachsen.svg" alt="Sachsen">
+            <img src="location/Deutschland_Lage_von_Sachsen-Anhalt.svg" alt="Sachsen-Anhalt">
+            <img src="location/Deutschland_Lage_von_Schleswig-Holstein.svg" alt="Schleswig-Holstein">
+
+
+            </div>
+        </div>
+        </div>
             
 
 
+        </div>
 
 
 
 
 
-    </script>
-    
+
+
+
+
+
+
+
+        <script src="script.js"></script>
+
 
 
 </body>
+
 </html>

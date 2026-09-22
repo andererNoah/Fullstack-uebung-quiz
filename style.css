@@ -1,5 +1,5 @@
 .body   {
-    background-color: #080808;
+    background-color: #fdfcfc;
 }
 .header {
     background-color: #030303;
@@ -54,18 +54,28 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  
 }
 
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
+.flip-card-back {
   background-color: #ffffff;
   color: black;
 }
 
-/* Style the back side */
-.flip-card-back {
+.flip-card-front {
   background-color: rgb(255, 255, 255);
   color: rgb(13, 13, 13);
   transform: rotateY(180deg);
 }
 
+.main-container {
+  display: flex;
+}
+
+.left-container {
+  flex: 7;
+}
+
+.right-container {
+  flex: 3;
+}
